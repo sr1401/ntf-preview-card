@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    --soft_blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    min-height: 100vh;
+    background-color: var(--very-dark-blue-main-BG);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    width: 350px;
+    height: 596px;
+    background-color: var(--very-dark-blue-card-BG);
+    border-radius: 15px;
+    padding: 24px;
+}
+
+.card__img > img {
+    border-radius: 6px;
+}
+
+.card__img {
+    position: relative;
+    width: 302px; 
+    height: 302px;
+}
+
+.overlay, .img--view {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.overlay {
+    background-color: var(--cyan);
+    border-radius: 6px;
+}
+
+.card__img:hover .overlay {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.card__img:hover .img--view {
+    cursor: pointer;
+    opacity: 1;
+    margin: auto;
+}
+
+.card__name {
+    font-size: 1.3125em;
+    font-weight: 600;
+    display: block;
+    margin-top: 26px;
+}
+
+.card__description {
+    font-size: 1.125em;
+    color: var(--soft_blue);
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+.card__info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9375em;
+    margin-top: 23px;
+}
+
+.card__info > div {
+    display: flex;
+    align-items: center;
+}
+
+.card__info__price {
+    color: var(--cyan);
+}
+
+.card__info__price > img {
+    margin-right: 7px;
+}
+
+.card__info__time {
+    color: var(--soft_blue);
+}
+
+.card__info__time > img {
+    margin-right: 8px;
+}
+
+.info__time {
+    font-weight: 300;
+}
+
+.card__creator {
+    border-top: 1px solid var(--very-dark-blue-line);
+    padding-top: 16px;
+    display: flex;
+    align-items: center;
+    margin-top: 21px;
+}
+
+.card__creator img{
+    margin-right: 17px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+.creator_info {
+    /* font-size: 1em; */
+    font-weight: 300;
+    color: var(--soft_blue);
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+a:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
