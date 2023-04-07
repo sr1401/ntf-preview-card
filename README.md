@@ -7,8 +7,8 @@
 ![image product desktop](/design/design_desktop.png)
 ### Links
 
-- Solution URL: [https://github.com/sr1401/ntf-preview-card](https://github.com/sr1401/ntf-preview-card)
-- Live Site URL: [https://sr1401.github.io/ntf-preview-card](https://sr1401.github.io/ntf-preview-card)
+- Solution: [https://github.com/sr1401/ntf-preview-card](https://github.com/sr1401/ntf-preview-card)
+- Live Site: [https://sr1401.github.io/ntf-preview-card](https://sr1401.github.io/ntf-preview-card)
 
 ## My process
 
